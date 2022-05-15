@@ -1,4 +1,6 @@
 
+document.getElementById("mainh").innerHTML = "Learn ES6";
+
 // // var a = "Test1";
 // // let b = "test2";
 
@@ -54,26 +56,26 @@
 
 ////////////////////// Classesss //////////////
 
-class User {
-    // constructor
-    constructor(username, email, password){
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
+// class User {
+//     // constructor
+//     constructor(username, email, password){
+//         this.username = username;
+//         this.email = email;
+//         this.password = password;
+//     }
 
 
-    static countUsers()
-    {
-    console.log("There are 50 Users");
-    }
+//     static countUsers()
+//     {
+//     console.log("There are 50 Users");
+//     }
 
 
-    // Method
-    register(){
-        console.log(this.username + ' is now registered');
-    }
-}
+//     // Method
+//     register(){
+//         console.log(this.username + ' is now registered');
+//     }
+// }
 
 // let riz = new User('Rizwan','Rizwanulahtiger313@gmail.com','12345');
 // let har = new User('Haris','haris@gmail.com','5588774');
@@ -81,22 +83,39 @@ class User {
 // riz.register();
 // har.register();
 
-User.countUsers();
+// User.countUsers();
 
-class Member extends User{
-    constructor(username, email, password, memeberPackage)
-    {
-        super(username, email, password);
-        this.package = memeberPackage;
-    }
+// class Member extends User{
+//     constructor(username, email, password, memeberPackage)
+//     {
+//         super(username, email, password);
+//         this.package = memeberPackage;
+//     }
 
-    getPackage()
-    {
-        console.log(this.username+" is Subscribed to the "+this.package+" Package");
-    }
-}
+//     getPackage()
+//     {
+//         console.log(this.username+" is Subscribed to the "+this.package+" Package");
+//     }
+// }
 
-let mike = new Member('mike','mike@gmail.com','1234','standard');
+// let mike = new Member('mike','mike@gmail.com','1234','standard');
 
-mike.getPackage();
-mike.register();
+// mike.getPackage();
+// mike.register();
+
+
+////////////////////////////////////// Template Literals ///////////////////////////
+
+// let template = '<h1>Hello</h1><p>This is a simple Template of Javascript</p>';
+
+// function makeUppercase(word)
+// {
+//     return word.toUpperCase();
+// }
+
+// let name = "Rizwan";
+// let template = `
+// <h1>${makeUppercase('Hello')}, ${name}</h1>
+// <p>This is a simple Template of Javascript</p>`;
+
+// document.getElementById("temp").innerHTML = template;
