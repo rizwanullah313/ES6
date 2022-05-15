@@ -119,3 +119,25 @@ document.getElementById("mainh").innerHTML = "Learn ES6";
 // <p>This is a simple Template of Javascript</p>`;
 
 // document.getElementById("temp").innerHTML = template;
+
+
+
+///////////////////////////// New Strings & Number Methods ///////////////////////
+
+// let theString = "Hello I'm Rizwan And I love Javascript and All other prgramming Languages";
+
+// console.log(theString);
+// console.log(theString.startsWith('Hello'));
+// console.log(theString.endsWith("Languages"));
+// console.log(theString.includes("other"));
+
+//Hex
+//console.log(0xFF);
+//Binary
+//console.log(0b101011);
+//Octal
+//console.log(0o543);
+
+// console.log(Number.isFinite(3));
+// console.log(Number.isNaN(2));
+// console.log(Number.isInteger(33.8));
