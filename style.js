@@ -141,3 +141,33 @@ document.getElementById("mainh").innerHTML = "Learn ES6";
 // console.log(Number.isFinite(3));
 // console.log(Number.isNaN(2));
 // console.log(Number.isInteger(33.8));
+
+
+
+////////////////////// default Paramters & Spread operator //////////////////////
+
+// function greet($greeting)
+// {
+//     console.log($greeting);
+// }
+
+// function greet($greeting = "PAk")
+// {
+//     console.log($greeting);
+// }
+
+// greet();
+// greet("Hello");
+// greet();
+
+
+// let args1 = [1,2,3];
+// let args2 = [4,5,6];
+// function test(){
+//     console.log(args1+','+args2);
+// }
+
+//test.apply(null, args);
+//test();
+//test(...args);
+// test(...args1,...args2);
