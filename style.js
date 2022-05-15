@@ -284,10 +284,88 @@ let add = function(a,b)
 }
 */
 
-let add = (a,b) =>
+// let add = (a,b) =>
+// {
+//     let sum = a+b;
+//     console.log(sum);
+//     return false;
+// }
+//  add(2,23);
+
+
+///////////////////////// Promise ////////////////////////
+
+//var myPromise = Promise.resolve('foo');
+//myPromise.then((res)=>console.log(res));
+
+
+/*
+var myPromise = new Promise(function(resolve,reject)
 {
-    let sum = a+b;
-    console.log(sum);
-    return false;
+   setTimeout(()=>resolve(4),2000);
+});
+
+myPromise.then((res)=>{
+    res +=6;
+    console.log(res);
+});
+*/
+
+
+/*
+function getData(method, url)
+{
+    return new Promise(function(resolve, reject)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.onload = function()
+        {
+            if(this.status >= 200 && this.status <300)
+            {
+                resolve(xhr.response);
+            }
+            else{
+                reject({
+                    status: this.status,
+                    statusText: xhr.statusText
+                });
+            }
+        };
+        xhr.onerror = function(){
+            reject({
+                status: this.status,
+                statusText: xhr.statusText
+            });
+        };
+        xhr.send();
+    });
 }
- add(2,23);
+
+getData('GET','https://jsonplaceholder.typicode.com/todos').then(function(data)
+{
+   //console.log(data);
+
+   let todos = JSON.parse(data);
+   let output = '';
+   for(let todo of todos)
+   {
+       output += `
+       <li>
+       <h3>${todo.title}</h3>
+       <p>Completed: ${todo.completed}</p>
+       </li>
+       `;
+   }
+
+   document.getElementById("temp1").innerHTML = output;
+
+}).catch(function(err)
+{
+    console.log(err);
+});
+
+*/
+
+
+
