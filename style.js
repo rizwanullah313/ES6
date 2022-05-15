@@ -171,3 +171,123 @@ document.getElementById("mainh").innerHTML = "Learn ES6";
 //test();
 //test(...args);
 // test(...args1,...args2);
+
+
+
+////////////////// Set, Map, Weakset and WeakMap ////////////////////////////
+
+//  let myArray = [11,22,33,44,55];
+//  let mySet = new Set(myArray);
+
+//  console.log(myArray);
+//  mySet.add('100');
+//  mySet.add({a: 1, b: 2});
+//  mySet.delete(22);
+//  mySet.clear();
+//  mySet.add("200");
+//  console.log(mySet);
+//  console.log(mySet.size);
+
+
+//  mySet.forEach(function(val)
+//  {
+//  console.log(val);
+//  });
+
+
+//  let myMap = new Map([['a1','Hello'],['b2','GoodBye']]);
+//  myMap.set('c3','Food');
+//  myMap.delete('a1');
+//  console.log(myMap);
+//  console.log(myMap.size);
+
+
+
+//  let carweakSet = new WeakSet();
+
+//  let car1 = {
+//  make: 'Honda',
+//  model: 'Civic'
+//  }
+
+//  carweakSet.add(car1);
+
+//  let car2 = {
+//     make: 'Toyota',
+//     model: 'Camry'
+//  }
+
+//  carweakSet.add(car2);
+//  carweakSet.delete(car1);
+//  console.log(carweakSet);
+
+
+//  let carweakMap = new WeakMap();
+
+//  let key1 = {
+//     id: 1
+//   }
+//  let car1 = {
+//     marke: 'Honda',
+//     model: 'Civic'
+//  }
+
+
+
+// let key2 = {
+//     id: 2
+// }
+// let car2 = {
+//     marke: 'Toyota',
+//     model: 'Camry'
+// }
+
+
+// carweakMap.set(key1,car1);
+// carweakMap.set(key2,car2);
+// carweakMap.delete(key1);
+// console.log(carweakMap);
+
+
+
+//////////////////////////////// Arrow Function ///////////////
+
+// function Prefixer(prefix)
+// {
+//     this.prefix = prefix;
+// }
+
+// Prefixer.prototype.profixArray = function(arr)
+// {
+//     return arr.map((x) =>
+//     {
+//         console.log(this.prefix + x);
+//     });
+
+    
+    // let that = this;
+    // return arr.map(function(x)
+    // {
+    //     console.log(that.prefix + x);
+    // });
+ //}
+
+/// let pre = new Prefixer('Hello ');
+/// pre.profixArray(['Rizwan','Shaan']);
+
+/*
+let add = function(a,b)
+{
+    let sum = a+b;
+    console.log(sum);
+    return false;
+}
+*/
+
+let add = (a,b) =>
+{
+    let sum = a+b;
+    console.log(sum);
+    return false;
+}
+ add(2,23);
